@@ -1,5 +1,6 @@
-# Проект содержит CLI-утилиту и HTTP-сервис для анализа качества данных.
+## Запуск HTTP-сервиса (API)
 
-# Установка
+Для запуска сервиса используйте uvicorn:
+
 ```bash
-uv sync
+uv run uvicorn eda_cli.api:app --reload --port 8000
