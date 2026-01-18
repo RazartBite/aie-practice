@@ -1,0 +1,27 @@
+{
+    "DummyClassifier": {
+        "accuracy": 0.9508,
+        "f1": 0.0,
+        "roc_auc": 0.5
+    },
+    "LogisticRegression": {
+        "accuracy": 0.9632,
+        "f1": 0.42857142857142855,
+        "roc_auc": 0.8339874679773299
+    },
+    "DecisionTree": {
+        "accuracy": 0.968,
+        "f1": 0.5959595959595959,
+        "roc_auc": 0.8268270450899713
+    },
+    "RandomForest": {
+        "accuracy": 0.9674,
+        "f1": 0.5075528700906344,
+        "roc_auc": 0.8922387993337232
+    },
+    "GradientBoosting": {
+        "accuracy": 0.9762,
+        "f1": 0.6925064599483204,
+        "roc_auc": 0.8960310701129729
+    }
+}

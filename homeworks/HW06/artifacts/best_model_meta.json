@@ -1,0 +1,8 @@
+{
+    "best_model": "GradientBoosting",
+    "metrics_test": {
+        "accuracy": 0.9762,
+        "f1": 0.6925064599483204,
+        "roc_auc": 0.8960310701129729
+    }
+}
