@@ -1,7 +1,0 @@
-experiment_id,task,dataset,seed,model_summary,optimizer,lr,epochs_trained,best_val_accuracy,test_accuracy,mean_iou,notes
-C1,classification,STL10,42,SimpleCNN,Adam,0.001,5,38.2,,,Simple CNN without augmentations (5 epochs)
-C2,classification,STL10,42,SimpleCNN,Adam,0.001,5,39.9,,,Simple CNN with augmentations (5 epochs)
-C3,classification,STL10,42,ResNet18,Adam,0.001,5,83.025,,,ResNet18 head-only (5 epochs)
-C4,classification,STL10,42,ResNet18,Adam,0.001,5,96.075,83.75,,ResNet18 partial fine-tune (5 epochs)
-V1,segmentation,OxfordIIITPet,42,DeepLabV3_ResNet50,,,0,,,0.43177693684895835,"Threshold=0.5, argmax prediction (30 images)"
-V2,segmentation,OxfordIIITPet,42,DeepLabV3_ResNet50,,,0,,,0.4313252766927083,"Morphological cleaning (opening with 5x5 kernel, 30 images)"
