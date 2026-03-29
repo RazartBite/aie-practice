@@ -1,0 +1,20 @@
+{
+    "model": "resnet18_finetune",
+    "dataset": "CIFAR100",
+    "num_classes": 100,
+    "input_size": [
+        3,
+        224,
+        224
+    ],
+    "transforms": {
+        "base": "Resize(224) + ToTensor + Normalize",
+        "augmentation": "RandomHorizontalFlip + RandomCrop",
+        "preprocess": "ImageNet normalization"
+    },
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "batch_size": 64,
+    "epochs": 10,
+    "seed": 42
+}
