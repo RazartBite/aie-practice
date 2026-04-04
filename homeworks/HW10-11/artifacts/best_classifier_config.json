@@ -1,6 +1,6 @@
 {
     "model": "resnet18_finetune",
-    "dataset": "CIFAR100",
+    "dataset": "STL10",
     "num_classes": 100,
     "input_size": [
         3,
