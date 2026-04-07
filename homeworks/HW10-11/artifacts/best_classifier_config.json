@@ -1,7 +1,7 @@
 {
     "model": "resnet18_finetune",
     "dataset": "STL10",
-    "num_classes": 100,
+    "num_classes": 10,
     "input_size": [
         3,
         224,
