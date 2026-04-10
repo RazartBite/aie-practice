@@ -1,0 +1,4 @@
+query,before_retrieved_sources,after_retrieved_sources,changed
+Как бронировать слот на GPU-сервере и что будет при нарушении расписания?,mlab_08|mlab_03|mlab_06|mlab_08|mlab_13,mlab_16|mlab_08|mlab_03|mlab_06|mlab_08,1
+Как планировщик fair-share влияет на длинные задачи?,mlab_14|mlab_15|mlab_01|mlab_08|mlab_06,mlab_17|mlab_14|mlab_15|mlab_01|mlab_08,1
+Что означает OOM на GPU и какие первые шаги предпринять?,mlab_06|mlab_07|mlab_05|mlab_08|mlab_03,mlab_06|mlab_07|mlab_16|mlab_18|mlab_05,1
