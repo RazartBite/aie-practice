@@ -1,0 +1,140 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data files (large)
+*.csv
+*.parquet
+*.h5
+*.hdf5
+!data/*.csv
+
+# Model files
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.pt
+*.pth
+*.onnx
+!artifacts/*.pkl
+!artifacts/*.joblib
+
+# Logs
+*.log
+logs/
+
+# Папка «дз» в корне репозитория (кириллица: д-з) — материалы семинаров, не в git
+/дз/
+дз/
+
+# Тяжёлые данные и чекпойнты домашних работ
+homeworks/HW08-09/data/
+homeworks/HW10-11/data/
+homeworks/HW13/artifacts/checkpoints/
+
+# Разрешить явно небольшие файлы ДЗ, попадающие под глобальные *.csv / *.pt
+!homeworks/HW12/S12-hw-dataset.csv
+!homeworks/HW12/artifacts/runs.csv
+!homeworks/HW12/artifacts/best_gru.pt
+!homeworks/HW13/artifacts/sample_predictions.csv
+
+# HW14: CSV в artifacts нужны для сдачи (иначе перекрываются правилом *.csv выше)
+!homeworks/HW14/artifacts/*.csv
+
+# HW14: кэш эмбеддингов после прогона ноутбука (пересоздаётся локально)
+homeworks/HW14/artifacts/emb_*.npz
+
+
