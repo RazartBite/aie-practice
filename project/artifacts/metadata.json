@@ -1,0 +1,32 @@
+{
+  "model_version": "catboost_v1",
+  "target": "Exited",
+  "features_order": [
+    "CreditScore",
+    "Age",
+    "Tenure",
+    "Balance",
+    "NumOfProducts",
+    "EstimatedSalary",
+    "Geography",
+    "Gender",
+    "HasCrCard",
+    "IsActiveMember"
+  ],
+  "numeric_features": [
+    "CreditScore",
+    "Age",
+    "Tenure",
+    "Balance",
+    "NumOfProducts",
+    "EstimatedSalary"
+  ],
+  "categorical_features": [
+    "Geography",
+    "Gender"
+  ],
+  "binary_features": [
+    "HasCrCard",
+    "IsActiveMember"
+  ]
+}

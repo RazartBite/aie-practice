@@ -1,0 +1,185 @@
+# ============================================
+# Python / Общие настройки
+# ============================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+*.pyd
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Logs
+*.log
+logs/
+
+# Python build artifacts
+*.whl
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# ============================================
+# Виртуальные окружения
+# ============================================
+
+.env
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# ============================================
+# IDE и редакторы
+# ============================================
+
+# VS Code
+.vscode/
+
+# Visual Studio
+.vs/
+
+# JetBrains (PyCharm, IntelliJ)
+.idea/
+*.iml
+
+# Vim / Emacs / Sublime
+*.swp
+*.swo
+*~
+
+# ============================================
+# Операционные системы
+# ============================================
+
+.DS_Store
+Thumbs.db
+*.bak
+
+# ============================================
+# Данные и модели
+# ============================================
+
+# Data files (large)
+*.csv
+*.parquet
+*.h5
+*.hdf5
+*.feather
+*.arrow
+!data/*.csv
+
+# Model files
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+*.onnx
+!artifacts/*.pkl
+!artifacts/*.joblib
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Git LFS candidates
+*.ckpt
+*.bin
+*.weights
+
+# CatBoost / ML caches
+catboost_info/
+
+# ============================================
+# Домашние работы и семинары
+# ============================================
+
+# Seminar materials (не загружать)
+/дз/
+дз/
+
+# Тяжёлые данные и чекпойнты домашних работ
+homeworks/HW08-09/data/
+homeworks/HW10-11/data/
+homeworks/HW13/artifacts/checkpoints/
+
+# HW14
+homeworks/HW14/artifacts/emb_*.npz
+
+# ============================================
+# Исключения (разрешённые файлы)
+# ============================================
+
+# Разрешённые файлы для сдачи
+!homeworks/HW12/S12-hw-dataset.csv
+!homeworks/HW12/artifacts/runs.csv
+!homeworks/HW12/artifacts/best_gru.pt
+!homeworks/HW13/artifacts/sample_predictions.csv
+!homeworks/HW14/artifacts/*.csv

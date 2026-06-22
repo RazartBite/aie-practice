@@ -1,0 +1,5 @@
+experiment_id,task,dataset,seed,split_summary,window_size,horizon,model_summary,features_summary,scaler,optimizer,lr,epochs_trained,best_val_mae,best_val_rmse,best_val_mape,test_mae,test_rmse,test_mape,notes
+B1,forecasting,S12-hw-dataset,42,train=3456/val=432/test=432,,1,naive-last,none,none,,,,6.254976076555024,7.9303317234538895,4.158438715949307,,,,прогноз = последнее известное значение
+B2,forecasting,S12-hw-dataset,42,train=3456/val=432/test=432,24.0,1,moving-average,none,none,,,,13.383243619485311,16.13919739222312,8.986199253397485,,,,скользящее среднее с окном=24
+B3,forecasting,S12-hw-dataset,42,train=3456/val=432/test=432,,1,Ridge(alpha=1.0),"11 features: lag_1,7,14, rolling_mean_7, rolling_std_7, calendar",StandardScaler,,,,5.237879497466868,6.637112520229295,3.4412180282333926,5.422712992773977,6.971021922652638,3.5108583971223974,Ridge на лаговых и календарных признаках
+R1,forecasting,S12-hw-dataset,42,train=3456/val=432/test=432,24.0,1,"GRU(64,2)",11 features scaled,StandardScaler,Adam,0.001,100.0,5.3556407699972235,7.145274845702339,3.4125787244435997,,,,"двухслойная GRU с dropout=0.2, оконное представление"

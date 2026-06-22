@@ -1,0 +1,34 @@
+random_state: 42
+
+data:
+  raw_csv_path: data/raw/Churn_Modelling.csv
+
+features:
+  target: Exited
+  drop_columns:
+    - RowNumber
+    - CustomerId
+    - Surname
+
+  numeric:
+    - CreditScore
+    - Age
+    - Tenure
+    - Balance
+    - NumOfProducts
+    - EstimatedSalary
+
+  categorical:
+    - Geography
+    - Gender
+
+  binary:
+    - HasCrCard
+    - IsActiveMember
+
+train:
+  test_size: 0.15
+  val_size: 0.15
+
+service:
+  model_version: catboost_v1

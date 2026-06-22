@@ -1,0 +1,35 @@
+{
+  "baseline": {
+    "model": "logistic_regression",
+    "accuracy": 0.704,
+    "precision": 0.3763,
+    "recall": 0.6863,
+    "f1": 0.4861,
+    "roc_auc": 0.762
+  },
+  "model_a": {
+    "model": "catboost_default",
+    "accuracy": 0.8587,
+    "precision": 0.75,
+    "recall": 0.4608,
+    "f1": 0.5709,
+    "roc_auc": 0.8655
+  },
+  "model_b": {
+    "model": "catboost_tuned",
+    "accuracy": 0.8573,
+    "precision": 0.75,
+    "recall": 0.451,
+    "f1": 0.5633,
+    "roc_auc": 0.8671
+  },
+  "best_params": {
+    "loss_function": "Logloss",
+    "random_seed": 42,
+    "verbose": false,
+    "eval_metric": "AUC",
+    "depth": 4,
+    "iterations": 200,
+    "learning_rate": 0.05
+  }
+}
