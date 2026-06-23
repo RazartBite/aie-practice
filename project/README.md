@@ -48,6 +48,7 @@
 - `tests/` – тесты (юнит-тесты, простые проверки).
   - `test_sanity.py` — проверка `/health`, `/docs` и доступности `/predict`. 
 - `artifacts/` – сохранённые модели, отчёты, результаты экспериментов.
+  - `images/` - Графики и визуализации из экспериментов
   - `model.cbm` — сохранённая финальная модель CatBoost;
   - `baseline_pipeline.joblib` — сохранённый baseline-пайплайн Logistic Regression;
   - `metadata.json` — метаданные модели и порядок признаков;
