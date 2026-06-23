@@ -165,7 +165,7 @@ docker run -p 8000:8000 bank-churn-service
 
 Для обучения используется открытый датасет `Churn_Modelling.csv` из Kaggle:
 
-Источник: https://www.kaggle.com/datasets/aakash50897/churn-modellingcsv
+Источник: [https://www.kaggle.com/datasets/aakash50897/churn-modellingcsv](https://www.kaggle.com/datasets/uttam94/churn-modellingcsv)
 
 ---
 
