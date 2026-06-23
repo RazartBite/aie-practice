@@ -48,7 +48,7 @@
 
 3.1. **Источник данных:**
 Для обучения используется открытый датасет Churn_Modelling.csv. Данные представлены в формате CSV и содержат обезличенные сведения о клиентах банка.
-Источник: https://www.kaggle.com/datasets/aakash50897/churn-modellingcsv
+Источник: [https://www.kaggle.com/datasets/aakash50897/churn-modellingcsv](https://www.kaggle.com/datasets/uttam94/churn-modellingcsv)
 
 3.2. **Структура данных:**
 
