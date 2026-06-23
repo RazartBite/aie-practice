@@ -28,10 +28,10 @@
 - `requirements.txt` – зависимости проекта (библиотеки Python, необходимые для запуска).
 - `self-checklist.md` – чеклист самопроверки проекта перед сдачей.
 - `notebooks/` – экспериментальные ноутбуки:
-  - `01_eda_data_quality.ipynb` # Разведочный анализ данных
-  - `02_feature_analysis.ipynb` # Анализ признаков
-  - `03_baseline_logreg.ipynb` # Baseline модель
-  - `04_catboost_models.ipynb` # CatBoost и сравнение
+  - `01_eda_data_quality.ipynb` - Разведочный анализ данных
+  - `02_feature_analysis.ipynb` - Анализ признаков
+  - `03_baseline_logreg.ipynb` - Baseline модель
+  - `04_catboost_models.ipynb` - CatBoost и сравнение
 - `src/` – основной код проекта:
   - `logging_config.py` — настройка логирования.
   - `main.py` # Упрощенная версия API-сервиса (без логирования)
