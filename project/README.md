@@ -190,7 +190,7 @@ pytest tests
 2. Запущу сервис и проверю эндпоинт /health.
 3. Выполню запрос к эндпоинту /predict через Swagger UI или curl.
 4. Покажу ноутбук notebooks/01_eda_data_quality.ipynb с основными шагами EDA.
-5. Покажу сравнение baseline-модели и финальной модели CatBoost по метрикам.
+5. Покажу 04_catboost_models.ipynb с результатами экспериментов, а также сравнение baseline-модели и финальной модели CatBoost по метрикам.
 
 ---
 
