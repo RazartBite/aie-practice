@@ -1,0 +1,27 @@
+# docker-compose.yml для сервиса предсказания оттока клиентов банка
+
+version: '3.8'
+
+services:
+  churn-service:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: bank-churn-service
+    ports:
+      - "8000:8000"
+    environment:
+      - LOG_LEVEL=INFO
+      - MODEL_DIR=artifacts
+      - PORT=8000
+    volumes:
+      - ../artifacts:/app/artifacts
+      - ../configs:/app/configs
+      - ../data:/app/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
