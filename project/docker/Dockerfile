@@ -1,25 +1,25 @@
 # Dockerfile для сервиса предсказания оттока клиентов банка
 
-# Базовый образ с Python 3.11
-FROM python:3.11-slim
+FROM python:3.12-slim
 
 # Установка рабочей директории
 WORKDIR /app
 
-# Копирование файла зависимостей
+# Копирование requirements.txt
 COPY requirements.txt .
 
 # Установка зависимостей
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Копирование всего кода проекта
-COPY . .
+# Копирование кода приложения
+COPY src/ ./src/
+COPY models/ ./models/
 
-# Создание директории для артефактов (если её нет)
-RUN mkdir -p artifacts
+# Установка PYTHONPATH
+ENV PYTHONPATH=/app
 
-# Открытие порта для доступа к сервису
+# Открытие порта
 EXPOSE 8000
 
-# Запуск сервиса
-CMD ["uvicorn", "src.service:app", "--host", "0.0.0.0", "--port", "8000"]
+# Запуск приложения
+CMD ["uvicorn", "src.service.app:app", "--host", "0.0.0.0", "--port", "8000"]
