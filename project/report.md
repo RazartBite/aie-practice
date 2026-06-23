@@ -304,13 +304,10 @@ cd project && uvicorn src.service:app --host 0.0.0.0 --port 8000
 # Локальный запуск упрощенной версии (для тестирования)
 cd project && uvicorn src.main:app --host 0.0.0.0 --port 8000
 
-# Запуск через Docker
-cd project/docker
-docker-compose up --build
+# Запуск через Docker: cборка Docker-образа
+docker build -t bank-churn-service
 
-# Или через Docker (без docker-compose)
-cd project/docker
-docker build -t bank-churn-service -f Dockerfile ..
+# Запуск в Docker
 docker run -p 8000:8000 bank-churn-service
 ```
 
