@@ -11,7 +11,7 @@
 |----|----------|------------------|-----------------------------|
 | 1  | Сервис запускается по инструкциям из `project/README.md` и работает | ✅ | `README.md`, разделы «Требования и установка», «Как запустить проект» |
 | 2  | Endpoint `/predict` использует **реальную модель**, а не заглушку | ✅ | `src/predict.py`, `src/service.py`, `artifacts/model.cbm` |
-| 3  | Есть EDA и хотя бы один эксперимент с метриками | ✅ | `notebooks/polonik_eda_churn.ipynb`, `report.md` |
+| 3  | Есть EDA и хотя бы один эксперимент с метриками | ✅ | `notebooks/01_eda_data_quality.ipynb`, `notebooks/04_catboost_models.ipynb` |
 | 4  | Есть baseline и улучшенная модель, есть **сравнение по метрикам** | ✅ | `src/train.py`, `report.md`, `artifacts/metrics.json` |
 | 5  | Код не свален в один ноутбук: есть внятная структура в `src/` | ✅ | `src/train.py`, `src/service.py`, `src/predict.py`, `src/schemas.py`, `src/utils.py`, `src/logging_config.py` |
 | 6  | Есть Dockerfile **или** понятный сценарий развёртывания без Docker | ✅ | `Dockerfile`, `README.md` |
