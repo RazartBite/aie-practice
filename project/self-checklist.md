@@ -13,7 +13,7 @@
 | 2  | Endpoint `/predict` использует **реальную модель**, а не заглушку | ✅ | `src/predict.py`, `src/service.py`, `artifacts/model.cbm` |
 | 3  | Есть EDA и хотя бы один эксперимент с метриками | ✅ | `notebooks/01_eda_data_quality.ipynb`, `notebooks/04_catboost_models.ipynb` |
 | 4  | Есть baseline и улучшенная модель, есть **сравнение по метрикам** | ✅ | `src/train.py`, `report.md`, `artifacts/metrics.json` |
-| 5  | Код не свален в один ноутбук: есть внятная структура в `src/` | ✅ | `src/train.py`, `src/service.py`, `src/predict.py`, `src/schemas.py`, `src/utils.py`, `src/logging_config.py` |
+| 5  | Код не свален в один ноутбук: есть внятная структура в `src/` | ✅ | папка src/, содержащая `src/main.py`, `src/train.py`, `src/service.py`, `src/predict.py`, `src/schemas.py`, `src/utils.py`, `src/logging_config.py` |
 | 6  | Есть Dockerfile **или** понятный сценарий развёртывания без Docker | ✅ | `Dockerfile`, `README.md` |
 | 7  | Есть `.env.example` и **нет** в репозитории реальных секретов/паролей | ✅ | `.env.example`, `.gitignore` |
 | 8  | Реализованы логи/наблюдаемость (хотя бы консольные логи + `/health`) | ✅ | `src/logging_config.py`, `src/service.py`, endpoint `/health` |
