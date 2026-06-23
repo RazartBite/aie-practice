@@ -1,35 +1,29 @@
 {
   "baseline": {
     "model": "logistic_regression",
-    "accuracy": 0.704,
-    "precision": 0.3763,
-    "recall": 0.6863,
+    "accuracy": 0.7040,
     "f1": 0.4861,
-    "roc_auc": 0.762
+    "roc_auc": 0.7620
   },
   "model_a": {
-    "model": "catboost_default",
-    "accuracy": 0.8587,
-    "precision": 0.75,
-    "recall": 0.4608,
-    "f1": 0.5709,
-    "roc_auc": 0.8655
+    "model": "catboost_base",
+    "accuracy": 0.8593,
+    "f1": 0.5772,
+    "roc_auc": 0.8662
   },
   "model_b": {
-    "model": "catboost_tuned",
-    "accuracy": 0.8573,
-    "precision": 0.75,
-    "recall": 0.451,
-    "f1": 0.5633,
-    "roc_auc": 0.8671
+    "model": "catboost_final",
+    "accuracy": 0.8587,
+    "f1": 0.5709,
+    "roc_auc": 0.8655
   },
   "best_params": {
     "loss_function": "Logloss",
     "random_seed": 42,
     "verbose": false,
     "eval_metric": "AUC",
-    "depth": 4,
-    "iterations": 200,
+    "depth": 6,
+    "iterations": 300,
     "learning_rate": 0.05
   }
 }
