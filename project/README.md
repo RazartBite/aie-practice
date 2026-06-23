@@ -189,7 +189,7 @@ pytest tests
 1. Кратко покажу структуру проекта (notebooks/, src/, data/, configs/, artifacts/).
 2. Запущу сервис и проверю эндпоинт /health.
 3. Выполню запрос к эндпоинту /predict через Swagger UI или curl.
-4. Покажу ноутбук notebooks/polonik_eda_churn.ipynb с основными шагами EDA.
+4. Покажу ноутбук notebooks/01_eda_data_quality.ipynb с основными шагами EDA.
 5. Покажу сравнение baseline-модели и финальной модели CatBoost по метрикам.
 
 ---
